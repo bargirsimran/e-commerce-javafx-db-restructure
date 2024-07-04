@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginScreenController">
+   <children>
+      <TextField fx:id="username" layoutX="375.0" layoutY="119.0" prefHeight="39.0" prefWidth="255.0" promptText="Enter Username" style="-fx-background-color: Transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="password" layoutX="375.0" layoutY="197.0" prefHeight="39.0" prefWidth="255.0" promptText="Enter Password" style="-fx-background-color: Transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="loginButton" layoutX="454.0" layoutY="265.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #0589ff;" text="Login" textFill="#e8ebee">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="439.0" layoutY="331.0" text="Don't have Account?" textFill="#0589ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="newRegistration" layoutX="465.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #0589ff;" text="Register here" textFill="#f2eeee" />
+      <Label layoutX="448.0" layoutY="65.0" text="User Login" textFill="#0589ff">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" layoutX="570.0" layoutY="272.0" prefHeight="25.0" prefWidth="60.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="-16.0" prefHeight="417.0" prefWidth="308.0" style="-fx-background-color: #0598ff;">
+         <children>
+            <Label layoutX="74.0" layoutY="225.0" text=" E-Commerce" textFill="#f2efef">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="257.0" text="Management" textFill="#f3f4f5">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/1156660_ecommerce_logo_shopify_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="351.0" layoutY="223.0" size="20" />
+      <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="355.0" layoutY="145.0" size="20" wrappingWidth="12.0" />
+      <FontAwesomeIcon fill="#0589ff" glyphName="USERS" layoutX="484.0" layoutY="54.0" size="35" />
+   </children>
+</AnchorPane>
